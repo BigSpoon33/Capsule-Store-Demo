@@ -10,11 +10,92 @@
       "description": "A simple counter widget to test capsule installation",
       "icon": "🧪",
       "author": "BigSpoon33",
-      "category": "demo",
+      "source": "Demo",
+      "widget": "dc-demoWidget",
       "files": [
         { "src": "capsules/demo-widget/dc-demoWidget.jsx", "dest": "System/Scripts/Widgets/dc-demoWidget.jsx" }
       ],
-      "dependencies": []
+      "activities": []
+    },
+    {
+      "id": "morning",
+      "name": "Morning",
+      "version": "1.0.0",
+      "description": "Sleep tracking & daily plan viewer",
+      "icon": "🌅",
+      "author": "BigSpoon33",
+      "source": "Active AF",
+      "widget": "dc-sleepTracker",
+      "files": [
+        { "src": "capsules/morning/dc-sleepTracker.jsx", "dest": "System/Scripts/Widgets/dc-sleepTracker.jsx" }
+      ],
+      "activities": [
+        { "id": "sleep", "name": "Sleep", "type": "value", "field": "sleep-hours", "goal": 8, "unit": "hrs", "icon": "🌙", "color": "#00B894" }
+      ]
+    },
+    {
+      "id": "activities",
+      "name": "Activities",
+      "version": "1.0.0",
+      "description": "Log and track daily activities",
+      "icon": "📊",
+      "author": "BigSpoon33",
+      "source": "Active AF",
+      "widget": "dc-activityLogger",
+      "files": [
+        { "src": "capsules/activities/dc-activityLogger.jsx", "dest": "System/Scripts/Widgets/dc-activityLogger.jsx" }
+      ],
+      "activities": [
+        { "id": "mood", "name": "Mood", "type": "value", "field": "mood", "goal": 5, "icon": "😊", "color": "#A29BFE" },
+        { "id": "energy", "name": "Energy", "type": "value", "field": "energy", "goal": 5, "icon": "⚡", "color": "#FDCB6E" },
+        { "id": "water", "name": "Water", "type": "value", "field": "water-ml", "goal": 3000, "unit": "ml", "icon": "💧", "color": "#0984E3" }
+      ]
+    },
+    {
+      "id": "meditation",
+      "name": "Meditation",
+      "version": "1.0.0",
+      "description": "Guided meditation timer",
+      "icon": "🧘",
+      "author": "BigSpoon33",
+      "source": "Active AF",
+      "widget": "dc-meditationTimer",
+      "files": [
+        { "src": "capsules/meditation/dc-meditationTimer.jsx", "dest": "System/Scripts/Widgets/dc-meditationTimer.jsx" }
+      ],
+      "activities": [
+        { "id": "meditation", "name": "Meditation", "type": "value", "field": "meditation-minutes", "goal": 15, "unit": "min", "icon": "🧘", "color": "#81ECEC" }
+      ]
+    },
+    {
+      "id": "evening",
+      "name": "Evening",
+      "version": "1.0.0",
+      "description": "Evening reflection & gratitude",
+      "icon": "🌙",
+      "author": "BigSpoon33",
+      "source": "Active AF",
+      "widget": "dc-eveningReflection",
+      "files": [
+        { "src": "capsules/evening/dc-eveningReflection.jsx", "dest": "System/Scripts/Widgets/dc-eveningReflection.jsx" }
+      ],
+      "activities": [
+        { "id": "gratitude", "name": "Gratitude", "type": "count", "field": "gratitude", "icon": "❤️", "color": "#FD79A8" }
+      ]
+    },
+    {
+      "id": "tracker",
+      "name": "Trends",
+      "version": "1.0.0",
+      "description": "Heatmaps & trend graphs",
+      "icon": "📉",
+      "author": "BigSpoon33",
+      "source": "Active AF",
+      "widget": "dc-activityTracker",
+      "files": [
+        { "src": "capsules/tracker/dc-activityTracker.jsx", "dest": "System/Scripts/Widgets/dc-activityTracker.jsx" }
+      ],
+      "activities": []
     }
   ]
 }
