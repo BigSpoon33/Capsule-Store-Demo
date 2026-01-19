@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-01-19T00:00:00.000Z",
+  "repoUrl": "https://github.com/BigSpoon33/Capsule-Store-Demo",
+  "capsules": [
+    {
+      "id": "demo-widget",
+      "name": "Demo Widget",
+      "version": "1.0.0",
+      "description": "A simple counter widget to test capsule installation",
+      "icon": "🧪",
+      "author": "BigSpoon33",
+      "category": "demo",
+      "files": [
+        { "src": "capsules/demo-widget/dc-demoWidget.jsx", "dest": "System/Scripts/Widgets/dc-demoWidget.jsx" }
+      ],
+      "dependencies": []
+    }
+  ]
+}
